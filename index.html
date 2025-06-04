@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eunice | Portfolio</title>
+  <style>
+    :root {
+      --aqua: #a0e7e5;
+      --purple: #6c5ce7;
+      --background: #f0f8ff;
+      --text: #2e2e2e;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--aqua);
+      color: var(--purple);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: var(--purple);
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--purple);
+      margin-bottom: 2rem;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      border: 4px solid var(--aqua);
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--purple);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact img {
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    footer {
+      background: var(--purple);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hello! I am Eunice</h1>
+    <p>Creative Developer & Designer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+
+     <p>
+    Welcome to My Portfolio!
+Hi, I’m a BSCS2A student passionate about technology, coding, and continuous learning. This space showcases my journey in Computer Science—from projects and coursework to personal explorations in software development, design, and innovation.
+Feel free to explore and connect!
+    </p>
+
+    <h2>About Me</h2>
+    <img src="c:\Users\andre\Downloads\7b63bfd2-3012-459b-bb51-e7069ae1210b.jpg" alt="Eunice's photo">
+    <p>
+ I'm a BSCS2A student with a passion for coding, web development, and tech innovation. I enjoy learning new tools, building projects, and solving problems through creative solutions.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card">HTML & CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React</div>
+      <div class="card">Figma / Adobe XD</div>
+      <div class="card">Responsive Web Design</div>
+      <div class="card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>UI Developer - SkyTech</h3>
+        <p><strong>2024 – Present</strong></p>
+        <p>Building dynamic user interfaces for web applications. Focused on front-end performance and mobile-first design.</p>
+      </div>
+      <div class="card">
+        <h3>Web Intern - BrightPixel Studio</h3>
+        <p><strong>2023</strong></p>
+        <p>Collaborated with designers and developers on branding websites and landing pages. Helped with Figma to code conversion.</p>
+      </div>
+      <div class="card">
+        <h3>Freelance Developer</h3>
+        <p><strong>2022 – 2023</strong></p>
+        <p>Created personal and portfolio websites with unique, feminine aesthetics. Built with HTML/CSS, JavaScript, and animations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s collaborate and make magic happen ✨</p>
+    <p><strong>Email:</strong> caduyaeunicegrace@gmail.com</p>
+    <p>
+      <a href="https://www.instagram.com/Ambokeun/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="40" height="40" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/share/15ZgraJaos/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" width="40" height="40" alt="Facebook">
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Eunice Caduya. Coded with 💙</p>
+  </footer>
+</body>
+</html>
